@@ -1,0 +1,138 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button {
+  background-color: #78CDD7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #66B5B2;
+}
+
+.home-landing-page {
+  background-color: #f9f4f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: relative; /* Ensure relative positioning for child absolute elements */
+}
+
+.home-landing-page .div {
+  background-color: #f9f4f5;
+  width: 1440px;
+  height: 844px;
+  position: relative; /* Ensure relative positioning for child absolute elements */
+}
+
+.home-landing-page .download-CV {
+  position: absolute;
+  color: coral;
+  width: 284px;
+  top: 440px;
+  left: 204px;
+  z-index: 10; /* Ensure the button is on top of other elements */
+}
+
+.home-landing-page .overlap-group {
+  position: relative;
+  width: 282px;
+  height: 75px;
+  background-image: url(./img/rectangle-2.svg);
+  background-size: 100% 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #000000; 
+  text-decoration: none; 
+  padding: 10px 15px; 
+  font-size: 18px; 
+  transition: color 0.3s; 
+}
+
+.nav-link:hover {
+  color: #66B5B2; 
+}
+
+.home-landing-page .info {
+  position: absolute;
+  top: 180px;
+  left: 203px;
+}
+
+.home-landing-page .welcome-to-my {
+  position: absolute;
+  width: 384px;
+  height: 163px;
+  top: 108px;
+  left: 0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home-landing-page .i-am-roshan-lama {
+  position: absolute;
+  width: 276px;
+  height: 123px;
+  top: 0;
+  left: 0;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home-landing-page .logo {
+  position: absolute;
+  width: 230px;
+  height: 53px;
+  top: 20px;
+  left: 20px;
+  object-fit: cover;
+}
+
+.home-landing-page .img {
+  position: absolute;
+  width: 481px;
+  height: 557px;
+  top: 153px;
+  left: 857px;
+}
+
+.circles {
+  position: absolute;
+  width: 418px;
+  height: 242px;
+  top: 600px;
+  left: 0;
+  z-index: 1; /* Ensure the circle is below the button */
+}

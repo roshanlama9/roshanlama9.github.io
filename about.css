@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f4f5;
+    margin: 0;
+    height: 100vh;
+    color: #333;
+}
+
+.home-landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    width: 100%;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #66B5B2;
+}
+
+/* Logo and Circle Images */
+.logo {
+    width: 230px;
+    height: 53px;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Circle image should stay in the background */
+.circles {
+    width: 418px;
+    height: 242px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    margin: 0;
+    z-index: 1; /* Make sure the circles are behind the cards */
+    opacity: 0.7; /* Optional: Slight transparency for a better look */
+}
+
+/* Container for the cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto;
+    gap: 20px;
+    position: relative; /* Ensure the cards are positioned relative to the container */
+    z-index: 2; /* Make sure the cards appear above the circles */
+}
+
+/* Card Class for Sections */
+.card {
+    background-color: #78cdd746;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    height: 300px;
+    margin-bottom: 250px;
+    box-sizing: border-box;
+}
+
+.card h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.card button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: left; /* Align content to the left */
+}
+
+
+.card p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Button Hover Effect */
+.card button:hover p {
+    color: #78CDD7;
+}
